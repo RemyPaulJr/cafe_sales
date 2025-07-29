@@ -23,13 +23,14 @@ Null counts:
 Each transaction is unique. This column needs to be unique so that is good.
 
 Unique Values:
-Transaction ID - All unique
-Item - UNKNOWN, ERROR - Need to handle these, format all lowercase and group similar variations ("latte", "late", "latte ")
-Quantity - UKNOWN, ERROR - Can calulate this using total spent / price per unit
-Price Per Unit - ERROR, UNKNOWN - Can calulate these using the total spent / quantity
-Total Spent - UNKNOWN, ERROR - Can calculate this using Total Spent / Price Per Unit, but only if both are present and valid. Otherwise, flag the row for review. 
-Payment Method - ERROR, UNKNOWN - Can use the mode? or impute based on related columns (large transactions -> credit card), Will be either digital wallet, credit card, or cash
-Location - Impute missing or placeholder values using the mode after removing ‘ERROR’ and ‘UNKNOWN’ to avoid skew.
-Transaction Date - UKNOWN, ERROR - try parsing, flag ones that can't be parsed, or drop or replace unparseable dates. Derived columns like day of the week, hour of the day for further analysis?? Use errors='coerce' with pd.to_datetime
-Some of these columns also have NaN 
+- Transaction ID - All unique
+- Item - UNKNOWN, ERROR - Need to handle these, format all lowercase and group similar variations ("latte", "late", "latte ")
+- Quantity - UKNOWN, ERROR - Can calulate this using total spent / price per unit
+- Price Per Unit - ERROR, UNKNOWN - Can calulate these using the total spent / quantity
+- Total Spent - UNKNOWN, ERROR - Can calculate this using Total Spent / Price Per Unit, but only if both are present and valid. Otherwise, flag the row for review. 
+- Payment Method - ERROR, UNKNOWN - Can use the mode? or impute based on related columns (large transactions -> credit card), Will be either digital wallet, credit card, or cash
+- Location - Impute missing or placeholder values using the mode after removing ‘ERROR’ and ‘UNKNOWN’ to avoid skew.
+- Transaction Date - UKNOWN, ERROR - try parsing, flag ones that can't be parsed, or drop or replace unparseable dates. Derived columns like day of the week, hour of the day for further analysis?? Use errors='coerce' with pd.to_datetime
+
+> Some of these columns also have NaN 
 
