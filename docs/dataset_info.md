@@ -1,12 +1,12 @@
 Columns:
-Transaction ID - Non null - Object
-Item - Non null - Object
-Quantity - Non null - Object
-Price Per Unit - Non null - Object
-Total Spent - Non null - Object
-Payment Method - Non null - Object
-Location - Non null - Object
-Transaction Date - Non null - Object
+- Transaction ID - Non null - Object
+- Item - Non null - Object
+- Quantity - Non null - Object
+- Price Per Unit - Non null - Object
+- Total Spent - Non null - Object
+- Payment Method - Non null - Object
+- Location - Non null - Object
+- Transaction Date - Non null - Object
 
 We have 8 columns all of object data type.
 
