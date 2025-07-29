@@ -12,8 +12,7 @@ Analyze messy café sales data from a local business to clean, transform, and ex
 
 > I’ve been running this café for the past 2 years, and while the business is doing okay, I honestly don’t know what’s working and what’s not.
 
-> I exported some sales data from my POS system, but it’s all over the place. Some items are listed in different ways (like “latte” vs. “Laté”), and I think there are duplicates and maybe even errors in the 
-> quantities. It’s been too much to handle.
+> I exported some sales data from my POS system, but it’s all over the place. Some items are listed in different ways (like “latte” vs. “Laté”), and I think there are duplicates and maybe even errors in the quantities. It’s been too much to handle.
 
 ## 🧽 Data Cleaning Focus
 - Fix inconsistent item names (e.g., “latte” vs. “Laté”)
